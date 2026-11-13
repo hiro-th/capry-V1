@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAPRI</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <h1>CAPRI</h1>
+        <p>Advanced AI companion</p>
+      </div>
+
+      <div id="chatMessages" class="chat-box">
+        <div class="message assistant">
+          Bonjour ! Je suis CAPRI. Entrez le code d'activation et demandez-moi ce que vous voulez.
+        </div>
+      </div>
+
+      <form id="chatForm" class="form-wrap">
+        <input id="activationCode" type="password" value="hiro" placeholder="Activation code" aria-label="Activation code" />
+        <input id="sessionId" type="text" placeholder="Session ID (optional)" aria-label="Session ID" />
+        <input id="messageInput" type="text" placeholder="Ask CAPRI anything..." aria-label="Message" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
